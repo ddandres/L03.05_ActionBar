@@ -1,0 +1,25 @@
+<!--
+  ~ Copyright (c) 2019. David de Andrés and Juan Carlos Ruiz, DISCA - UPV, Development of apps for mobile devices.
+  -->
+
+<!-- Trick to use a string within the definition of different string resources -->
+<!DOCTYPE resources [<!ENTITY app_name "L03.05_ActionBar">]>
+
+<resources>
+    <string name="app_name">&app_name;</string>
+    <!-- Strings used for the MainActivity -->
+    <string name="main_title">&app_name; (Level 0)</string>
+    <string name="message">Activities will display its current level on the ActionBar.\n
+        Once you get to the first level, the first option of the action menu will launch
+        a new Activity to get to the next level.\n
+        The second option (overflow menu) will display a message informing about the current level.\n
+        The <b>Back</b> button will navigate to the previous level, whereas the <b>Up</b> button
+        will navigate to the home activity (level 0).
+    </string>
+    <!-- Strings used for the action menu -->
+    <string name="next">Next level</string>
+    <string name="where">Where am I?</string>
+    <!-- Strings used for the NextActivity -->
+    <string name="level">Level %1$d</string>
+    <string name="here">You are at Level %1$d</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- MenuItem to launch another activity with one more level. Shown if room. -->
+    <item
+        android:id="@+id/mNext"
+        android:icon="@android:drawable/ic_media_play"
+        android:title="@string/next"
+        app:showAsAction="ifRoom" />
+
+    <!-- MenuItem to display a message with the current level. Shown in the overflow menu. -->
+    <item
+        android:id="@+id/mWhere"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="@string/where"
+        app:showAsAction="never" />
+
+</menu>
