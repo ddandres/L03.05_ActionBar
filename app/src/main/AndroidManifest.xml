@@ -3,7 +3,7 @@
   -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.l0305_actionbar">
+    package="labs.dadm.l0305_actionbar">
 
     <application
         android:allowBackup="true"

@@ -1,4 +1,8 @@
-package com.example.android.l0305_actionbar;
+/*
+ * Copyright (c) 2019. David de Andrés and Juan Carlos Ruiz, DISCA - UPV, Development of apps for mobile devices.
+ */
+
+package labs.dadm.l0305_actionbar;
 
 import org.junit.Test;
 

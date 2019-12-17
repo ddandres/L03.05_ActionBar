@@ -2,7 +2,7 @@
  * Copyright (c) 2019. David de Andrés and Juan Carlos Ruiz, DISCA - UPV, Development of apps for mobile devices.
  */
 
-package com.example.android.l0305_actionbar;
+package labs.dadm.l0305_actionbar;
 
 import android.content.Intent;
 import android.os.Bundle;
