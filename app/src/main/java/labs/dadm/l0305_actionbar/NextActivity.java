@@ -46,27 +46,25 @@ public class NextActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         // Determine the action to take place according to the Id of the action selected
-        switch (item.getItemId()) {
-
+        final int selectedItem = item.getItemId();
+        if (selectedItem == R.id.mNext) {
             // Launch the activity for the next level
-            case R.id.mNext:
-                // Generate the required Intent
-                final Intent intent =
-                        new Intent(NextActivity.this, NextActivity.class);
-                // Add level+1 as parameter
-                intent.putExtra(Utils.LEVEL, level + 1);
-                // Start the new activity
-                startActivity(intent);
-                return true;
+            // Generate the required Intent
+            final Intent intent =
+                    new Intent(NextActivity.this, NextActivity.class);
+            // Add level+1 as parameter
+            intent.putExtra(Utils.LEVEL, level + 1);
+            // Start the new activity
+            startActivity(intent);
+            return true;
+        } else if (selectedItem == R.id.mWhere) {
 
             // Show a message displaying the current level
-            case R.id.mWhere:
-                Toast.makeText(
-                        NextActivity.this,
-                        getString(R.string.here, level),
-                        Toast.LENGTH_SHORT).show();
-                return true;
-
+            Toast.makeText(
+                    NextActivity.this,
+                    getString(R.string.here, level),
+                    Toast.LENGTH_SHORT).show();
+            return true;
         }
         // If none of the custom actions was selected, let the system deal with it
         return super.onOptionsItemSelected(item);
