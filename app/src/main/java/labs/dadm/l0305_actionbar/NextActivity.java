@@ -30,19 +30,15 @@ public class NextActivity extends AppCompatActivity {
         setTitle(getString(R.string.level, level));
     }
 
-    /*
-        This method is executed when the activity is created to populate the ActionBar with actions
-    */
+    // This method is executed when the activity is created to populate the ActionBar with actions
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(@NonNull Menu menu) {
         // Generate the Menu object from the XML resource file
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
-    /*
-        This method is executed when any action from the ActionBar is selected
-    */
+    // This method is executed when any action from the ActionBar is selected
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         // Determine the action to take place according to the Id of the action selected
@@ -58,7 +54,6 @@ public class NextActivity extends AppCompatActivity {
             startActivity(intent);
             return true;
         } else if (selectedItem == R.id.mWhere) {
-
             // Show a message displaying the current level
             Toast.makeText(
                     NextActivity.this,
